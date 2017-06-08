@@ -77,3 +77,36 @@ var formData = [
     "options": []
   }
 ];
+
+//form box
+var x = document.getElementById('sign-up');
+var aform = document.createElement('form');
+aform.setAttribute("action", "");
+aform.setAttribute("method", "post");
+x.appendChild(aform);
+
+
+//header for form
+var header = document.createElement('h1');
+var headtext = document.createTextNode("Sign Up For My Web App");
+header.appendChild(headtext);
+document.body.appendChild(header);
+
+//first name field
+var first = document.createElement('input');
+first.setAttribute("type", "text");
+
+
+
+
+var last = document.createElement('input');
+var email = document.createElement('email');
+var url = document.createElement('url');
+
+
+
+for(var i = 0; i < formData.length; i++){
+  var input = formData[i];
+  console.log(input.label);
+
+}
